@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HayJay Styles</title>
+  <link rel="stylesheet" href="styles.css">
+  <meta name="description" content="HayJay Styles – Redefining fashion for all ages. Discover timeless elegance and modern trends perfectly tailored for you.">
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar" id="navbar">
+      <div class="nav-container">
+        <a href="#home" class="logo">HayJay Styles</a>
+        <button class="nav-toggle" id="navToggle">&#9776;</button>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#collections" class="nav-link">Collections</a></li>
+          <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1>HayJay Styles</h1>
+      <p>Timeless Fashion. Modern Vibes.<br>For Every Generation.</p>
+      <a href="#collections" class="btn">View Collections</a>
+    </div>
+    <img src="hero-fashion.jpg" alt="Fashion runway with elegant models" class="hero-bg-img">
+  </section>
+
+  <!-- About Section -->
+  <section class="about" id="about">
+    <div class="container about-flex">
+      <div class="about-content">
+        <h2>About HayJay Styles</h2>
+        <p>
+          At HayJay Styles, we craft fashion that bridges generations—classic elegance meets contemporary flair. Our designer, HayJay, has been celebrated for blending the finest fabrics and the latest trends to create pieces that empower both the young and young-at-heart.<br><br>
+          Whether you seek bold statements or refined simplicity, HayJay Styles is your destination for style that stands the test of time.
+        </p>
+      </div>
+      <div class="about-image">
+        <img src="about-fashion.jpg" alt="Fashion designer at work sketching">
+      </div>
+    </div>
+  </section>
+
+  <!-- Collections Section -->
+  <section class="collections" id="collections">
+    <div class="container">
+      <h2>Our Collections</h2>
+      <div class="collection-filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="classic">Classic</button>
+        <button class="filter-btn" data-filter="urban">Urban</button>
+        <button class="filter-btn" data-filter="evening">Evening</button>
+        <button class="filter-btn" data-filter="youth">Youth</button>
+      </div>
+      <div class="collection-items" id="collectionItems">
+        <!-- Items rendered by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Image Modal for fullscreen/zoom preview -->
+  <div class="img-modal" id="imgModal">
+    <span class="img-modal-close" id="imgModalClose">&times;</span>
+    <img class="img-modal-content" id="imgModalImg" src="" alt="Full Preview">
+  </div>
+
+  <!-- Testimonials -->
+  <section class="testimonials" id="testimonials">
+    <div class="container">
+      <h2>What Our Clients Say</h2>
+      <div class="testimonial-list">
+        <div class="testimonial">
+          <img src="client1.jpg" alt="Client 1" class="testimonial-img">
+          <blockquote>
+            “HayJay Styles helped me rediscover my confidence. I feel younger and more elegant in every outfit!”<br>
+            <span>— Mrs. Ada Okafor</span>
+          </blockquote>
+        </div>
+        <div class="testimonial">
+          <img src="client2.jpg" alt="Client 2" class="testimonial-img">
+          <blockquote>
+            “The designs are fresh, bold, and always on point. I love how I can express myself!”<br>
+            <span>— Tunde Balogun</span>
+          </blockquote>
+        </div>
+        <div class="testimonial">
+          <img src="client3.jpg" alt="Client 3" class="testimonial-img">
+          <blockquote>
+            “Elegant and trendy! My mum and I both shop here. There’s something for all ages.”<br>
+            <span>— Zara Bello</span>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <h2>Contact HayJay Styles</h2>
+      <div class="contact-details">
+        <p><strong>Email:</strong> <a href="mailto:hayjaystyles@gmail.com">hayjaystyles@gmail.com</a></p>
+        <p><strong>WhatsApp:</strong> <a href="https://wa.me/2347045962325" target="_blank">+2347045962325</a></p>
+        <div class="social-media">
+          <strong>Follow Us:</strong>
+          <a href="https://instagram.com/hayjaystyles" class="social-icon" target="_blank" title="Instagram">
+            <img src="instagram.svg" alt="Instagram" />
+          </a>
+          <a href="https://facebook.com/hayjaystyles" class="social-icon" target="_blank" title="Facebook">
+            <img src="facebook.svg" alt="Facebook" />
+          </a>
+          <a href="https://twitter.com/hayjaystyles" class="social-icon" target="_blank" title="Twitter">
+            <img src="twitter.svg" alt="Twitter" />
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>© 2025 HayJay Styles. Designed for Every Generation.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
